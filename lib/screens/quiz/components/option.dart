@@ -28,7 +28,7 @@ class Option extends StatelessWidget {
               return kRedColor;
             }
           }
-          return kGreyColor;
+          return kBlackColor;
         }
 
         IconData getTheRightIcon(){
@@ -55,13 +55,13 @@ class Option extends StatelessWidget {
                   height: 26,
                   width: 26,
                   decoration: BoxDecoration(
-                    color: getTheRightColor() == kGreyColor
+                    color: getTheRightColor() == kBlackColor
                         ? Colors.transparent
                         : getTheRightColor(),
                       borderRadius: BorderRadius.circular(50),
                       border: Border.all(color: getTheRightColor())
                   ),
-                  child: getTheRightColor() == kGreyColor
+                  child: getTheRightColor() == kBlackColor
                       ? null
                       : Icon(getTheRightIcon(), size: 16,),
                 ),
